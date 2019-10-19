@@ -46,23 +46,25 @@ MacOS:</br>
 1.打开你的`文本编辑器`或`集成开发环境`.</br>
 2.添加以下代码.</br>
 ``` c
-#include <stdio.h>
-int main {
-    printf("你好世界");
-    return 0;
+#include <stdio.h> //预处理器指令.stdio意思是标准输入和输出(standard input and output).
+
+int main //主函数,程序从此处开始
+{
+    printf("你好世界"); //函数printf()被定义在stdio.h中,用于输出.
+    return 0; //结束函数main(),并返回值0.
 }
 ```
 
 选项1:使用文本编辑器+C编译器</br>
 3.保存为`helloworld.c`.</br>
 4.在文件的目录下使用打开`命令提示符`,`PowerShell`或`终端`.</br>
-5.输入`gcc helloworld.c`</br>
-6.输入`a.exe`(Windows),`a.out`(Linux)或`a`(MacOS)</br>
+5.输入`gcc helloworld.c`.</br>
+6.输入`a.exe`(Windows),`a.out`(Linux)或`a`(MacOS).</br>
 
 附言:使用`gcc`时生成文件可能不同,视情况而定.</br>
 
 选项2:使用集成开发环境</br>
-6.点击启动(快捷键一般为<kbd>Ctrl</kbd>+<kbd>F11</kbd>)</br>
+6.点击启动(快捷键一般为<kbd>Ctrl</kbd>+<kbd>F11</kbd>).</br>
 
 输出结果:</br>
 `你好世界`</br>
